@@ -50,7 +50,7 @@
                 </svg>
             </button>
         </div>
-        <div class="mob-menu ">
+        <div class="mob-menu is-open">
             <button type="button" class="mob-menu-btn">
                 <svg class="mob-menu-close-icon" width="8" height="8">
                     <use href="./images/icons.svg#icon-close-black-18dp"></use>
@@ -184,7 +184,11 @@
                 <h2 class="workers-hidden">Our Team</h2>
                 <ul class="workers-list">
                     <li class="workers-itom">
-                        <img class="workers-picture" src="./images/img-men1.jpg" alt="men" width="264" height="260" />
+                        <picture>
+                            <source srcset="./images/img-men1.jpg 1x, ./images/img-men-2x-min.jpg 2x ">
+                            <img class="workers-picture" src="./images/img-men1.jpg" alt="men" width="264"
+                                height="260" />
+                        </picture>
                         <div class="workers-subtitle-name">
                             <h3 class="workers-subtitle">Mark Guerrero</h3>
                             <p class="workers-text">Product Designer</p>
@@ -221,8 +225,12 @@
                         </div>
                     </li>
                     <li class="workers-itom">
-                        <img class="workers-picture" src="./images/img-(1)-min.jpg" alt="men2" width="264"
-                            height="260" />
+                        <picture>
+                            <source srcset="./images/img-(1)-min.jpg 1x, ./images/img-m-2x-min.jpg  2x" />
+
+                            <img class="workers-picture" src="./images/img-(1)-min.jpg" alt="men2" width="264"
+                                height="260" />
+                        </picture>
                         <div class="workers-subtitle-name">
                             <h3 class="workers-subtitle">Tom Ford</h3>
                             <p class="workers-text">Frontend Developer</p>
@@ -259,8 +267,11 @@
                         </div>
                     </li>
                     <li class="workers-itom">
-                        <img class="workers-picture" src="./images/img-(2)-min.jpg" alt="women" width="264"
-                            height="260" />
+                        <picture>
+                            <source srcset="./images/img-(2)-min.jpg 1x, ./images/img-g-2x-min.jpg 2x">
+                            <img class="workers-picture" src="./images/img-(2)-min.jpg" alt="women" width="264"
+                                height="260" />
+                        </picture>
                         <div class="workers-subtitle-name">
                             <h3 class="workers-subtitle">Camila Garcia</h3>
                             <p class="workers-text">Marketing</p>
@@ -297,8 +308,11 @@
                         </div>
                     </li>
                     <li class="workers-itom">
-                        <img class="workers-picture" src="./images/img-(3)-min.jpg" alt="men3" width="264"
-                            height="260" />
+                        <picture>
+                            <source srcset="./images/img-(3)-min.jpg 1x, ./images/img-me-2x-min.jpg">
+                            <img class="workers-picture" src="./images/img-(3)-min.jpg" alt="men3" width="264"
+                                height="260" />
+                        </picture>
                         <div class="workers-subtitle-name">
                             <h3 class="workers-subtitle">Daniel Wilson</h3>
                             <p class="workers-text">UI Designer</p>
@@ -337,14 +351,25 @@
                 </ul>
             </div>
         </section>
-        <!--- <section class="portfolio">
+        <section class="portfolio">
             <div class="container">
                 <h2 class="portfolio-hidden">Our Portfolio</h2>
                 <ul class="portfolio-list">
                     <LI class="portfolio-itom">
                         <div class="portfolio-cover-wrap">
-                            <img class="portfolio-picture" src="./images/img (15)-mob.jpg" alt="app" width="360" />
-
+                            <picture>
+                                <source media="(min-width: 1166px )" srcset="./images/img1.jpg 1x, 
+                                    ./images/app-note-2x.jpg  2x" />
+                                <source media="(min-width: 768px )" srcset="
+                                                                    ./images/app-t-1x.jpg    1x,
+                                                                ./images/app-t-2x.jpg 2x
+                                                                                            " />
+                                <source media="(max-width: 767px )" srcset="
+                                                               ./images/app-m-1x.jpg    1x,
+                                                               ./images/app-m-2x.jpg 2x
+                                                                                            " />
+                                <img class="portfolio-picture" src="./images/img1.jpg" alt="app" width="360" />
+                            </picture>
                             <p class="portfolio-cover-text">14 Stylish and User-Friendly App Design Concepts · Task
                                 Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                                 · Cloud Storage App</p>
@@ -358,8 +383,19 @@
                     </LI>
                     <LI class="portfolio-itom">
                         <div class="portfolio-cover-wrap">
-                            <img class="portfolio-picture" src="./images/img2.jpg" alt="pay" width="360" />
-
+                            <picture>
+                                <source media="(min-width: 1166px )" srcset="./images/img2.jpg 1x, 
+                                    ./images/tel-note-2x-min.jpg 2x" />
+                                <source media="(min-width: 768px )" srcset="
+                                                ./images/tel-tabl-min.jpg    1x,
+                                            ./images/tel-tabl-2x-min.jpg 2x
+                                                                        " />
+                                <source media="(max-width: 767px )" srcset="
+                                           ./images/tel-tabl-min.jpg    1x,
+                                           ./images/tel-tabl-2x-min.jpg 2x
+                                                                        " />
+                                <img class="portfolio-picture" src="./images/img2.jpg" alt="pay" width="360" />
+                            </picture>
                             <p class="portfolio-cover-text">14 Stylish and User-Friendly App Design Concepts · Task
                                 Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                                 · Cloud Storage App</p>
@@ -372,8 +408,17 @@
                     </LI>
                     <LI class="portfolio-itom">
                         <div class="portfolio-cover-wrap">
-                            <img class="portfolio-picture" src="./images/img3.jpg" alt="notebook" width="360" />
-
+                            <picture>
+                                <source media="(min-width: 1166px )" srcset="./images/img3.jpg 1x, 
+                                    ./images/note-note-2x-min.jpg 2x" />
+                                <source media="(min-width: 768px )" srcset="
+                                              ./images/note-1x.jpg  1x,
+                                             ./images/note-2x.jpg 2x" />
+                                <source media="(max-width: 767px )" srcset="
+                                                  ./images/note-mob-2x-min.jpg    1x,
+                                                  ./images/note-mob-min.jpg 2x" />
+                                <img class="portfolio-picture" src="./images/img3.jpg" alt="notebook" width="360" />
+                            </picture>
                             <p class="portfolio-cover-text">14 Stylish and User-Friendly App Design Concepts · Task
                                 Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                                 · Cloud Storage App</p>
@@ -386,8 +431,19 @@
                     </LI>
                     <LI class="portfolio-itom">
                         <div class="portfolio-cover-wrap">
-                            <img class="portfolio-picture" src="./images/img4.jpg" alt="auto" width="360" />
-
+                            <picture>
+                                <source media="(min-width: 1166px )" srcset="../images/img4.jpg 1x, 
+                                                                ./images/auto-note-2x-min.jpg 2x" />
+                                <source media="(min-width: 768px )" srcset="
+                                                                            ./images/auto-tabl-min.jpg    1x,
+                                                                        ./images/auto-tabl-2x-min.jpg 2x
+                                                                                                    " />
+                                <source media="(max-width: 767px )" srcset="
+                                                                       ./images/auto-mob-min.jpg    1x,
+                                                                       ./images/auto-mob-2x-min.jpg 2x
+                                                                                                    " />
+                                <img class="portfolio-picture" src="./images/img4.jpg" alt="auto" width="360" />
+                            </picture>
                             <p class="portfolio-cover-text">14 Stylish and User-Friendly App Design Concepts · Task
                                 Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                                 · Cloud Storage App</p>
@@ -400,8 +456,22 @@
                     </LI>
                     <LI class="portfolio-itom">
                         <div class="portfolio-cover-wrap">
-                            <img class="portfolio-picture" src="./images/img5.jpg" alt="phone" width="288" />
-
+                            <picture>
+                                <source media="(min-width: 1166px )"
+                                    srcset="../images/img5.jpg 1x, 
+                                                                                            ./images/lun-note-2x-min.jpg 2x" />
+                                <source media="(min-width: 768px )"
+                                    srcset="
+                                                                                                        ./images/lun-tabl-min.jpg    1x,
+                                                                                                    ./images/lun-tabl-2x-min.jpg 2x
+                                                                                                                                " />
+                                <source media="(max-width: 767px )"
+                                    srcset="
+                                                                                                   ./images/luna-1x.jpg    1x,
+                                                                                                   ./images/lun-mob-2x-min.jpg 2x
+                                                                                                                                " />
+                                <img class="portfolio-picture" src="./images/img5.jpg" alt="phone" width="360" />
+                            </picture>
                             <p class="portfolio-cover-text">14 Stylish and User-Friendly App Design Concepts · Task
                                 Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                                 · Cloud Storage App</p>
@@ -414,8 +484,22 @@
                     </LI>
                     <LI class="portfolio-itom">
                         <div class="portfolio-cover-wrap">
-                            <img class="portfolio-picture" src="./images/img6.jpg" alt="girl" width="288" />
-
+                            <picture>
+                                <source media="(min-width: 1166px )"
+                                    srcset="../images/img6.jpg 1x, 
+                                                                                            ./images/girl-note-2x-min.jpg 2x" />
+                                <source media="(min-width: 768px )"
+                                    srcset="
+                                                                                                        ./images/girl-tabl-1x-min.jpg    1x,
+                                                                                                    ./images/girl-tabl-2x-min.jpg 2x
+                                                                                                                                " />
+                                <source media="(max-width: 767px )"
+                                    srcset="
+                                                                                                   ./images/girl-mob-min.jpg    1x,
+                                                                                                   ./images/girl-mob-2x-min.jpg 2x
+                                                                                                                                " />
+                                <img class="portfolio-picture" src="./images/img6.jpg" alt="girl" width="360" />
+                            </picture>
                             <p class="portfolio-cover-text">14 Stylish and User-Friendly App Design Concepts · Task
                                 Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                                 · Cloud Storage App</p>
@@ -495,7 +579,7 @@
         </div>
     </footer>
 
- <!---   <div class="backdrop is-open">
+    <div class="backdrop is-open">
         <div class="modal">
             <button type="button" class="modal-close-btn">
                 <svg class="modal-close-icon" width="8" height="8">
