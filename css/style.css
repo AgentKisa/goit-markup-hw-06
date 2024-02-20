@@ -172,23 +172,28 @@ img {
 
 .mob-menu {
 
-    width: 100%;
-    height: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #FFF;
-    padding-top: 72px;
-    padding-left: 16px;
-    padding-right: 24px;
-    padding-bottom: 40px;
-    display: flex;
-    flex-direction: column;
-
+    background-color: #ffffff;
+    height: 100vh;
+    width: 100%;
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
     overflow: auto;
+}
+
+.mob-menu-menu {
+    padding: 24px 24px 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-mob-menu {
+    margin-top: 48px;
 }
 
 .mob-menu-btn {
@@ -210,17 +215,14 @@ img {
 }
 
 .mob-menu-list {
-    color: var(--NAVY-BLUE, #2E2F42);
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+
 }
 
-.mob-menu-item {
-    margin-bottom: 168px;
-}
+.mob-menu-item {}
 
 .mob-menu-link {
     color: var(--NAVY-BLUE, #2E2F42);
@@ -233,18 +235,21 @@ img {
 
 }
 
+.mob-menu-address {
+    display: flex;
+}
+
 .mob-current {
     color: var(--OCEAN, #404BBF);
 }
 
-.mob-menu-item:not(:last-child) {
-    margin-bottom: 40px;
-}
+.mob-menu-item:not(:last-child) {}
 
 .mob-menu-address-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
     margin-bottom: 48px;
-    position: fixed;
-    bottom: 88px;
 }
 
 .mob-menu-address-item {}
@@ -265,16 +270,13 @@ img {
     color: var(--IRIS, #4D5AE5);
 }
 
-.mob-menu-address-item:not(:last-child) {
-    margin-bottom: 24px;
-}
+.mob-menu-address-item:not(:last-child) {}
 
 .mob-menu-icon-list {
     display: flex;
-    justify-content: left;
-    gap: 40px;
-    position: fixed;
-    bottom: 40px;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
 }
 
 .mob-menu-icon-item {
@@ -654,7 +656,9 @@ img {
 
 .foot-div {}
 
-.foot-con {}
+.foot-con {
+    margin-bottom: 72px;
+}
 
 .footer-logo {
     color: var(--IRIS, #4D5AE5);
@@ -686,7 +690,7 @@ img {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-bottom: 72px;
+
 
 }
 
@@ -705,7 +709,9 @@ img {
 
 }
 
-.soc-container {}
+.soc-container {
+    margin-bottom: 72px;
+}
 
 
 .soc-icon-list {
@@ -714,7 +720,7 @@ img {
     align-items: flex-start;
     align-items: center;
     justify-content: center;
-    margin-bottom: 72px;
+
 }
 
 .soc-icon-item {
@@ -771,6 +777,10 @@ img {
 
 .footer-form {}
 
+.footer-cont {
+    margin-bottom: 16px;
+}
+
 .footer-input {
     background-color: unset;
     padding: 8px 16px;
@@ -785,7 +795,7 @@ img {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     color: #ffffff;
     opacity: 0.3;
-    margin-bottom: 16px;
+
 }
 
 .footer-input::placeholder {
@@ -1162,7 +1172,7 @@ img {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
             url(../images/Dark-bg-tablet.jpg);
-        padding: 112px 136px;
+        padding: 112px 0px 112px 0px;
         width: 768px;
         height: 436px;
         display: block;
@@ -1220,7 +1230,7 @@ img {
         background-color: #404BBF
     }
 
-    /* workes */
+    /* advantages */
 
     .advantages-list {
         display: flex;
@@ -1276,7 +1286,7 @@ img {
         width: calc((100% - 24px) / 2);
         border-radius: 0px 0px 4px 4px;
         box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-
+        margin-bottom: 0%;
 
 
     }
@@ -1331,11 +1341,13 @@ img {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        row-gap: 72px;
+
         column-gap: 24px;
     }
 
-    .soc-container {}
+    .soc-container {
+        margin-bottom: 0%;
+    }
 
     .footer-bottom {}
 
@@ -1353,6 +1365,10 @@ img {
 
     .footer-input::placeholder {
         opacity: 0.6;
+    }
+
+    .footer-cont {
+        margin-bottom: 0%;
     }
 
     .footer-btn {}
@@ -1592,6 +1608,7 @@ img {
         max-width: 1158px;
         padding: 0 15px;
 
+
     }
 
     .header-container {
@@ -1747,8 +1764,7 @@ img {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
             url(../images/people-office.jpg);
-        padding-top: 188px;
-        padding-bottom: 188px;
+        padding: 188px 0px 188px 0px;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -2252,6 +2268,10 @@ img {
         display: flex;
 
 
+    }
+
+    .foot-con {
+        margin-bottom: 0%;
     }
 
     /* modal */
